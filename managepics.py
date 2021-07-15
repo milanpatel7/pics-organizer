@@ -8,7 +8,7 @@ import re
 from PIL import Image
 from PIL.ExifTags import TAGS
 
-
+# get timestamp of the image
 def get_image_datetime(filename):
     image = Image.open(filename)
     exifdata = image.getexif()
